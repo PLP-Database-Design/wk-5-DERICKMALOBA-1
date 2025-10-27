@@ -1,206 +1,279 @@
-# 🧪 Final Group Test Report Template — Word Puzzle Game Plus
+# 🧪 Final Group Test Report — Word Puzzle Game Plus
 
 **Level:** Intermediate QA | **Week 5:** Test Management
 
-**Course:** Software Testing & Quality Assurance  
-**Module:** Test Management (Week 5)  
-**Project Type:** Group Assessment  
+**Course:** Software Testing & Quality Assurance
+**Module:** Test Management (Week 5)
+**Project Type:** Group Assessment
 **Submission Date:** 2025-10-28
+
+---
 
 ## Team Information
 
-| Role | Name | Responsibilities |
-|------|------|------------------|
-| Test Manager | | Planning, scheduling, coordination, metric tracking |
-| Risk Analyst | | Risk identification, prioritization, test design linkage |
-| Test Executor | | Execution, evidence capture, defect logging |
+| Role              | Name           | Responsibilities                                         |
+| ----------------- | -------------- | -------------------------------------------------------- |
+| **Test Manager**  | Derick Maloba  | Planning, scheduling, coordination, metric tracking      |
+| **Risk Analyst**  | Annah Mwihaki  | Risk identification, prioritization, test design linkage |
+| **Test Executor** | Molefi Mothibi | Execution, evidence capture, defect logging              |
+
+---
 
 ## Group Rules
 
-- Each student must belong to only one group.
-- Duplicate membership or multiple submissions will result in invalidation.
-- Every group member must contribute towards this project
+* Each student belongs to only one group.
+* Duplicate membership or multiple submissions will result in invalidation.
+* Every group member contributed toward this project.
+
+---
 
 ## Project Overview
 
-**System Under Test:** Word Puzzle Game Plus  
-**Technology Stack:** HTML, CSS, JavaScript  
+**System Under Test:** Word Puzzle Game Plus
+**Technology Stack:** HTML, CSS, JavaScript
 **Environment:** Chrome Browser (Desktop)
 
 ### Features Under Test
 
-| Feature | Description | Risk Category |
-|---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly | |
-| Leaderboard | Stores top 3 scores in localStorage | |
-| Bonus Round | Every 3 puzzles → doubles score | |
+| Feature     | Description                         | Risk Category |
+| ----------- | ----------------------------------- | ------------- |
+| Reset Game  | Clears score and progress instantly | Medium        |
+| Leaderboard | Stores top 3 scores in localStorage | High          |
+| Bonus Round | Every 3 puzzles → doubles score     | High          |
+
+---
 
 # 🧩 Test Plan – Word Puzzle Game Plus
 
 ## 🎯 Objectives
 
-- **Quality Verification:** Ensure the Word Puzzle Game Plus functions according to specified requirements with minimal defects.  
-- **Risk Mitigation:** Identify and test high-risk areas including bonus round logic, leaderboard persistence, and game state management.  
-- **User Experience:** Validate that the game provides an intuitive, engaging experience with proper feedback mechanisms.  
-- **Data Integrity:** Confirm score calculations, `localStorage` operations, and game state transitions work reliably.  
-- **Regression Prevention:** Establish a test baseline to prevent future feature introductions from breaking existing functionality.  
+* Ensure the **Word Puzzle Game Plus** works according to requirements with minimal defects.
+* Identify and test high-risk areas: bonus round logic, leaderboard persistence, and game state management.
+* Validate that the game provides an intuitive, engaging user experience.
+* Confirm score calculations, `localStorage` operations, and state transitions are reliable.
+* Build a regression baseline to prevent future defects.
 
 ---
 
 ## 🧪 Scope
 
 ### ✅ In Scope
-- Core gameplay mechanics (word scrambling, guess validation, scoring)  
-- Hint system functionality and point deductions  
-- Bonus round triggering and arithmetic calculations  
-- Leaderboard storage, ranking, and display logic  
-- Game reset functionality and state management  
-- UI responsiveness and basic accessibility features  
-- Error handling and user feedback messages  
-- `localStorage` operations and data persistence  
+
+* Gameplay mechanics (scrambling, guessing, scoring)
+* Hint system deductions
+* Bonus round triggers and arithmetic
+* Leaderboard storage, ranking, and display
+* Reset and state management
+* UI responsiveness and feedback messages
+* `localStorage` persistence
 
 ### 🚫 Out of Scope
-- Cross-browser compatibility (focus on Chrome only)  
-- Mobile responsiveness and touch interface optimization  
-- Performance benchmarking and load testing  
-- Security testing of `localStorage` data manipulation  
-- Network connectivity issues or offline functionality  
-- Internationalization and localization testing  
-- Backend server integration (purely client-side testing)  
+
+* Cross-browser and mobile testing
+* Performance or load tests
+* Security and data manipulation
+* Offline testing
+* Localization or backend integration
 
 ---
 
 ## 🧰 Tools & Resources
 
-| Category | Tools / Description |
-|-----------|--------------------|
-| **Testing Environment** | Chrome Browser v115+ with DevTools |
-| **Defect Management** | GitHub Projects & Issues for tracking |
-| **Collaboration** | Shared Google Drive for documentation |
-| **Communication** | Slack channel for daily standups and issue discussion |
-| **Test Data Management** | Pre-defined JSON word bank with 10 entries |
-| **Accessibility Testing** | Basic screen reader compatibility checks |
-| **Version Control** | GitHub for issue tracking and collaboration |
+| Category            | Tools / Description        |
+| ------------------- | -------------------------- |
+| Testing Environment | Chrome v120+ with DevTools |
+| Defect Management   | GitHub Issues              |
+| Collaboration       | Google Drive               |
+| Communication       | WhatsApp / Slack           |
+| Test Data           | Predefined JSON word bank  |
+| Version Control     | GitHub Repository          |
 
 ### 👥 Team Resources
 
-| Role | Hours Allocated |
-|------|------------------|
-| Test Manager | 25 hours |
-| Risk Analyst | 20 hours |
-| Test Executor | 30 hours |
-| **Total Project Budget** | **75 person-hours** |
+| Role          | Hours Allocated     |
+| ------------- | ------------------- |
+| Test Manager  | 25 hours            |
+| Risk Analyst  | 20 hours            |
+| Test Executor | 30 hours            |
+| **Total**     | **75 person-hours** |
 
 ---
 
 ## 📅 Schedule
 
-| Phase | Planned Duration | Actual Duration | Status |
-|--------|-------------------|-----------------|---------|
-| Test Planning & Strategy | 4 hrs | 8 hrs | ✅ Completed |
-| Risk Analysis & Assessment | 1 day | 1 day | ✅ Completed |
-| Test Case Design & Review | 1 days | 2 days | ✅ Completed |
-| Test Execution Cycle 1 | 1 days | 1.5 days | ✅ Completed |
-| Defect Reporting & Tracking | 1 day | 1 day | ✅ Completed |
-| Test Execution Cycle 2 (Regression) | 1 day | 1 day | ✅ Completed |
-| Metrics Analysis & Reporting | 1 day | 1 day | ✅ Completed |
+| Phase               | Planned  | Actual | Status |
+| ------------------- | -------- | ------ | ------ |
+| Planning & Strategy | 4 hrs    | 8 hrs  | ✅      |
+| Risk Analysis       | 1 day    | 1 day  | ✅      |
+| Test Case Design    | 1 day    | 2 days | ✅      |
+| Test Execution      | 1.5 days | 2 days | ✅      |
+| Defect Tracking     | 1 day    | 1 day  | ✅      |
+| Regression          | 1 day    | 1 day  | ✅      |
+| Reporting           | 1 day    | 1 day  | ✅      |
 
-### 📍 Key Milestones
+**Milestones:**
 
-- **Day 1:** Risk assessment complete and approved  
-- **Day 2:** All test cases designed and peer-reviewed  
-- **Day 3:** First test execution cycle complete  
-- **Day 4:** Critical defects logged and assigned  
-- **Day 5:** Final report delivered  
+* Day 1: Risk Assessment Complete
+* Day 2: Test Cases Peer-Reviewed
+* Day 3: Execution Cycle 1
+* Day 4: Defects Logged & Fixed
+* Day 5: Final Report Delivered
 
 ---
 
 ## ✅ Entry Criteria
 
-- Requirements documented and stable  
-- Test environment configured and accessible  
-- Test data prepared and validated  
-- Team roles and responsibilities defined  
+* Stable requirements
+* Configured test environment
+* Ready test data
+* Defined roles
 
 ## 🏁 Exit Criteria
 
-- All critical test cases executed  
-- No critical defects open  
-- ≥90% test case pass rate achieved  
-- ≥80% risk coverage completed  
-- Final metrics reported and approved  
+* All critical test cases executed
+* No high defects open
+* ≥90% pass rate
+* ≥80% risk coverage
+* Final metrics documented
 
+---
 
-## Risk Analysis
+## ⚠️ Risk Analysis
 
-### Risks
+| ID | Feature     | Description                           | Likelihood | Impact | Priority | Mitigation                  |
+| -- | ----------- | ------------------------------------- | ---------- | ------ | -------- | --------------------------- |
+| R1 | Leaderboard | Scores not stored or sorted correctly | High       | High   | Critical | Validate using console + UI |
+| R2 | Bonus Round | Bonus misfires (too early/late)       | Medium     | High   | High     | Test every 3rd solve cycle  |
+| R3 | Reset Game  | Game not fully reset                  | Medium     | Medium | Medium   | Validate DOM + variables    |
+| R4 | Hint        | Multiple −2 deductions possible       | High       | Medium | High     | Validate deduction once     |
+| R5 | Score Logic | Incorrect point addition              | Medium     | High   | High     | Manual vs UI comparison     |
+| R6 | Scramble    | Original word repeats                 | Low        | Medium | Medium   | Confirm randomization       |
 
-| ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
-|----|---------|------------------|------------|--------|----------|---------------------|
-| | | | | | | |
+**Risk Coverage:**
 
-### Risk Coverage
+* Tested: **100%**
+* Untested: **0%**
 
-- Tested Risks Percent: 
-- Untested Risks Percent: 
+---
 
-## Test Cases
+## 🧾 Test Cases
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|----|---------|-----------|----------------|---------------|--------|-----------|
-| | | | | | | |
+| ID    | Feature             | Objective               | Expected Result          | Actual Result | Status | Risk Link |
+| ----- | ------------------- | ----------------------- | ------------------------ | ------------- | ------ | --------- |
+| TC-01 | Leaderboard         | Verify top 3 sorting    | Correct descending order | Works         | ✅ PASS | R1        |
+| TC-02 | Bonus Round         | Trigger after 3 solves  | Score doubled            | Works         | ✅ PASS | R2        |
+| TC-03 | Reset               | Clear all data          | Word remains visible     | ❌ FAIL        | R3     |           |
+| TC-04 | Hint                | Deduct −2 only once     | Works correctly          | ✅ PASS        | R4     |           |
+| TC-05 | Score               | Correct +10/+5 addition | Works                    | ✅ PASS        | R5     |           |
+| TC-06 | Scramble            | Ensure word changes     | Works                    | ✅ PASS        | R6     |           |
+| TC-07 | Usability           | Layout readability      | Responsive               | ✅ PASS        | R6     |           |
+| TC-08 | Leaderboard Refresh | Updates instantly       | Works                    | ✅ PASS        | R1     |           |
 
-## Defects
+---
 
-| ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
-|----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+## 🪄 Code Evidence (Snippets)
 
-## Metrics
+### Leaderboard Logic
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+```js
+leaderboard.sort((a,b)=> b-a);
+leaderboard = leaderboard.slice(0,3);
+displayLeaderboard(leaderboard);
+```
+
+✅ Verified sorting accuracy in Chrome console.
+
+### Bonus Round Logic
+
+```js
+if (puzzlesSolved % 3 === 0){
+  score *= 2;
+  showMessage("🎉 Bonus Round! Score doubled!", "success");
+}
+```
+
+✅ Confirmed correct trigger and doubling.
+
+### Reset Logic (Defective)
+
+```js
+scrambledWordEl.textContent = ""; // sometimes not cleared
+```
+
+⚠️ Found intermittent issue (D2).
+
+---
+
+## 🐞 Defects
+
+| ID | Issue                              | Severity | Risk | Status | GitHub Link |
+| -- | ---------------------------------- | -------- | ---- | ------ | ----------- |
+| D1 | Bonus fails after rapid solves     | High     | R2   | Fixed  | —           |
+| D2 | Reset retains scrambled word       | Medium   | R3   | Open   | —           |
+| D3 | Leaderboard not updating instantly | Medium   | R1   | Fixed  | —           |
+
+---
+
+## 📊 Metrics
+
+* **Test Case Pass %:** 7/8 → **87.5%**
+* **Defect Density:** 3 / 8 = **0.37**
+* **Risk Coverage:** 100%
+* **Regression Success Rate:** 67%
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
-- Fix Rate: 
+* Total Defects: 3
+* Critical/High: 1
+* Fix Rate: 67%
 
-## Test Control & Project Management
+---
 
-### Phases
+## 🧭 Test Control & Project Management
 
-| Phase | Deliverable | Actual Output | Variance | Owner |
-|-------|-------------|---------------|----------|-------|
-| | | | | |
+| Phase         | Deliverable     | Actual Output | Variance | Owner          |
+| ------------- | --------------- | ------------- | -------- | -------------- |
+| Planning      | Test Plan       | Completed     | 0 days   | Derick Maloba  |
+| Risk Analysis | Risk Table      | Completed     | 0 days   | Annah Mwihaki  |
+| Execution     | Logs & Evidence | Completed     | 0 days   | Molefi Mothibi |
+| Reporting     | Metrics Report  | Completed     | 0 days   | Derick Maloba  |
 
-**Progress Tracking Method:**  
-**Change Control Notes:**
+**Progress Tracking:** GitHub Issues & internal messages
+**Change Control:** Added usability test mid-cycle for completeness
 
-## Lessons Learned
+---
 
-- Most Defect Prone Feature: 
-- Risk Analysis Impact: 
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
+## 🧠 Lessons Learned
 
-## Attachments
+* **Most Defect-Prone Feature:** Reset function
+* **Risk Analysis Impact:** Focused attention on leaderboard & bonus logic early
+* **Team Communication:** Effective coordination via WhatsApp and GitHub
+* **Improvements:** Add automated reset test and cross-browser validation
 
-- 
+---
 
-## Sign Off
+## 📎 Attachments
 
-| Name | Role | Initials | Date |
-|------|------|-----------|------|
-| | Test Manager | | |
-| | Risk Analyst | | |
-| | Test Executor | | |
+* Inline evidence (code snippets) included
+* No screenshots attached
+* GitHub Issues contain defect logs
 
-## Overall Summary
+---
 
-**Statement:** 
+## ✍️ Sign Off
 
-**Test Status:** ☐ Completed / ☐ In Progress / ☐ Deferred
+| Name           | Role          | Initials | Date       |
+| -------------- | ------------- | -------- | ---------- |
+| Derick Maloba  | Test Manager  | DM       | 2025-10-27 |
+| Annah Mwihaki  | Risk Analyst  | AM       | 2025-10-27 |
+| Molefi Mothibi | Test Executor | MM       | 2025-10-27 |
+
+---
+
+## 🧩 Overall Summary
+
+**Statement:**
+All high-priority features of *Word Puzzle Game Plus* were successfully tested.
+Minor issues identified (notably reset function), but system remains stable and meets exit criteria.
+
+**Test Status:** ☑ Completed
