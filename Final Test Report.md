@@ -171,15 +171,30 @@
 
 ---
 
-## 🪄 Code Evidence (Snippets)
+| ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
+|----|---------|------------------|------------|--------|----------|---------------------|
+| R1| Bonus round| Bonus round not triggering|4 |5 |20(High) |Simulate more than 3 word puzzles for bonus round triggering |
+
+|R2 |Reset Game | Reset button fails to clear game scores |3 |5 |15(High) |Test reset feature multiple times to ensure correct response |
+
+|R3 |Leaderboard |Leadership board fails to update top scores | 5|5 |25(Critical) |Verify localtorage is being updated correctly and in real time |
+
+|R4 |Scores sorting |leadersboard scores not sorted and ranked properly | 3|4 |12(High) |Add multiple test scores |
+
+|R5| UI | UI features overlap/non-fuctional|3 |4 |12(High) | Retest and rechecck UI components and interactivity|
+
+|R6 | Performance|Lag on low end devices |2 |3 |6(Low) |Test using chrome devtools throtlling |
+
+|R7 | Hint feature|Hints don't deduct points from the current score |3 |4 |12(High) |Test the logic for the hint giving system to ensure that it deducts points once used |
+
+|R8 |Puzzle words |Solved words do not update to a new puzzle word once submitted |5 |4 |20(Critical) |Check the puzzle word database for proper integration with the submiit button |
+
+|R9 |New Puzzle |Lacks to generate a new puzzle once this feature is triggered |3 |3 |12(Medium) | Retest the newpuzzle features and ensure they work properly|
 
 ### Leaderboard Logic
 
-```js
-leaderboard.sort((a,b)=> b-a);
-leaderboard = leaderboard.slice(0,3);
-displayLeaderboard(leaderboard);
-```
+- Tested Risks Percent: 70%
+- Untested Risks Percent: 20%
 
 ✅ Verified sorting accuracy in Chrome console.
 
